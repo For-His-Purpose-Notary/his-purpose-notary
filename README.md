@@ -2,7 +2,7 @@
 
 Local Denver resident Notary Business Website
 
-# Tech -
+# Tech Utilized
 
 - Vite
 - React.js
