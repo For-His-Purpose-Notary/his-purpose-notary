@@ -14,25 +14,26 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-2">
+    <header className="flex justify-between items-center w-full p-4">
       <h1 className="text-3xl lg:text-5xl text-black">His Purpose Notary</h1>
       <button
-        className="lg:hidden text-4xl"
+        className="lg:hidden text-4xl z-50"
         onClick={toggleNavbar}
         aria-label="Toggle Navigation"
       >
-        ☰
+        {isNavOpen ? "✖" : "☰"}
       </button>
       <nav
-        className={`flex-col lg:flex-row justify-between items-center w-full font-thin mt-4 p-2
-          ${
-            isNavOpen ? "flex bg-gray-300 max-w-xs h-40 md:max-w-lg " : "hidden"
-          } lg:flex  `}
+        className={`absolute p-2 top-0 left-0 w-full h-screen bg-neutral-100 lg:bg-transparent flex flex-col justify-center items-center gap-6 text-xl transition-transform duration-1000 ease-in-out ${
+          isNavOpen ? "flex" : "-translate-x-full"
+        }  lg:flex lg:flex-row lg:gap-8 lg:translate-x-0 lg:transition-none lg:h-auto`}
         aria-label="Main navigation"
       >
-        <ul className="lg:flex  gap-8 p-4 text-2xl ml-20">
+        <ul className="flex flex-col justify-center items-center p-4 gap-10 lg:ml-auto lg:flex-row">
           {navItems.map((items) => (
-            <li key={items.id}>{items.section}</li>
+            <li key={items.id} className="">
+              {items.section}
+            </li>
           ))}
         </ul>
       </nav>
