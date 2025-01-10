@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="flex flex-col justify-center items-center min-h-screen">
       <section className="max-w-xs lg:max-w-3xl text-center flex flex-col gap-4">
         <img src="" alt="Logo" />
-        <blockquote className="text-xl lg:text-2xl">
+        <blockquote className="text-xl md:text-2xl lg:text-3xl">
           <p>{quote1}</p>
           <cite>- {author}</cite>
         </blockquote>
