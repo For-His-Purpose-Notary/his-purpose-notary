@@ -1,11 +1,12 @@
-import Header from "./components/Header";
+import Home from "./components/Home";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <h1 className="text-blue-300 text-4xl font-bold">His Purpose Notary</h1>
-      <Header />
+      <main className="font-thin font-sans">
+        <Home />
+      </main>
     </>
   );
 }
