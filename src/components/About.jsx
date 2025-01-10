@@ -9,10 +9,10 @@ export default function About() {
   ];
   return (
     <section className="flex flex-col justify-center items-center mt-20">
-      <h2 className="text-3xl lg:text-4xl p-4 flex mr-auto ml-16 lg:ml-52">
+      <h2 className="text-3xl lg:text-4xl p-8 flex mr-auto ml-20 lg:ml-48">
         My Story
       </h2>
-      <section className="max-w-sm md:max-w-xl lg:max-w-5xl flex flex-col gap-8 lg:flex-row">
+      <section className="max-w-xs md:max-w-xl lg:max-w-5xl flex flex-col gap-8 lg:flex-row">
         <p className=" text-xl md:text-xl  lg:text-2xl">{aboutText}</p>
         <img
           src={" /images/placeholder.jpg"}
