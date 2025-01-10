@@ -14,8 +14,9 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-4">
-      <h1 className="text-3xl lg:text-5xl text-black">His Purpose Notary</h1>
+    <header className="flex justify-between items-center w-full p-4 bg-black/50  ">
+      <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
+
       <button
         className="lg:hidden text-4xl z-50"
         onClick={toggleNavbar}
@@ -23,15 +24,42 @@ export default function Header() {
       >
         {isNavOpen ? "✖" : "☰"}
       </button>
+
+      {/* Conditional Rendering for Mobile Menu */}
+      {isNavOpen && (
+        <nav
+          className={`absolute p-2 top-0 left-0 w-full h-screen flex flex-col text-white
+            justify-center items-center gap-6 text-xl
+         bg-black/95
+            transition-transform duration-[800ms] ease-in-out 
+            lg:hidden`}
+          aria-label="Mobile navigation"
+        >
+          <ul className="flex flex-col justify-center items-center p-4 gap-10">
+            {navItems.map((items) => (
+              <li
+                key={items.id}
+                onClick={() => setIsNavOpen(false)}
+                className="cursor-pointer hover:underline"
+              >
+                {items.section}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+
+      {/* Always Visible for Large Screens */}
       <nav
-        className={`absolute p-2 top-0 left-0 w-full h-screen bg-neutral-100 lg:bg-transparent flex flex-col justify-center items-center gap-6 text-xl transition-transform duration-1000 ease-in-out ${
-          isNavOpen ? "flex" : "-translate-x-full"
-        }  lg:flex lg:flex-row lg:gap-8 lg:translate-x-0 lg:transition-none lg:h-auto`}
+        className="hidden lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
         aria-label="Main navigation"
       >
-        <ul className="flex flex-col justify-center items-center p-4 gap-10 lg:ml-auto lg:flex-row">
+        <ul className="flex flex-row gap-6">
           {navItems.map((items) => (
-            <li key={items.id} className="">
+            <li
+              key={items.id}
+              className="cursor-pointer hover:underline text-2xl"
+            >
               {items.section}
             </li>
           ))}
