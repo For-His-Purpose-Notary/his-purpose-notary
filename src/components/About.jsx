@@ -13,7 +13,9 @@ export default function About() {
   const whyNotary = [
     `Morbi ut orci nibh. Curabitur blandit, massa ac dapibus pulvinar, sapien diam vestibulum justo, 
      sit amet tincidunt lacus nibh sed tellus. Nulla consectetur eros non enim vestibulum, ac interdum 
-     eros hendrerit. Nullam aliquet nibh vitae`,
+     eros hendrerit. Nullam aliquet nibh vitae. Amet tincidunt lacus nibh sed tellus. Nulla consectetur eros non enim vestibulum, ac interdum 
+     eros hendrerit. Nullam aliquet nibh vitae lacinia iaculis. Praesent aliquet enim lorem, sit amet
+      varius quam lobortis eu. Sed ex mauris, dignissim id massa ac, congue. `,
   ];
   return (
     <section className="flex flex-col justify-center items-center mt-10 lg:mt-20">

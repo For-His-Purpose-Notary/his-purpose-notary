@@ -6,6 +6,7 @@ export default function Header() {
     { section: "About", id: 1 },
     { section: "Services", id: 2 },
     { section: "Testimonials", id: 3 },
+    { section: "Q&A", id: 4 },
     { section: "Contact", id: 4 },
   ];
 
@@ -49,7 +50,7 @@ export default function Header() {
         </nav>
       )}
 
-      {/* Always Visible for Large Screens */}
+      {/* Visible for Large Screens */}
       <nav
         className="hidden lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
         aria-label="Main navigation"
