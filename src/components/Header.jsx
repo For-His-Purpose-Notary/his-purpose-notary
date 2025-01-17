@@ -6,7 +6,8 @@ export default function Header() {
     { section: "About", id: 1 },
     { section: "Services", id: 2 },
     { section: "Testimonials", id: 3 },
-    { section: "Contact", id: 4 },
+    { section: "Q&A", id: 4 },
+    { section: "Contact", id: 5 },
   ];
 
   const toggleNavbar = () => {
@@ -14,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-4 bg-black/50  ">
+    <header className="flex justify-between items-center w-full p-4 bg-black/20  ">
       <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
 
       <button
@@ -49,7 +50,7 @@ export default function Header() {
         </nav>
       )}
 
-      {/* Always Visible for Large Screens */}
+      {/* Visible for Large Screens */}
       <nav
         className="hidden lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
         aria-label="Main navigation"
