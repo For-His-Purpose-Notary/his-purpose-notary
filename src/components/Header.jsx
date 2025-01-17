@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-4 bg-black/50  ">
+    <header className="flex justify-between items-center w-full p-4 bg-black/20  ">
       <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
 
       <button
