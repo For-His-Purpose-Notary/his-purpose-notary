@@ -7,7 +7,7 @@ export default function Header() {
     { section: "Services", id: 2 },
     { section: "Testimonials", id: 3 },
     { section: "Q&A", id: 4 },
-    { section: "Contact", id: 4 },
+    { section: "Contact", id: 5 },
   ];
 
   const toggleNavbar = () => {
