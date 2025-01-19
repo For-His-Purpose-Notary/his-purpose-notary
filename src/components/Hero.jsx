@@ -27,7 +27,7 @@ export default function Hero() {
         <Image
           image="/images/logo.png"
           alt="For His Purpose Notary Services, cross with dove and leaves"
-          className={"max-w-xs md:max-w-lg rounded"}
+          className={"max-w-xs md:max-w-lg rounded-3xl"}
         />
       </section>
     </section>

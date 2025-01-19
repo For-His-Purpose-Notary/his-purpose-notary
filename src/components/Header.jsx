@@ -8,9 +8,8 @@ export default function Header() {
     { section: "Home", id: 1 },
     { section: "About", id: 2 },
     { section: "Services", id: 3 },
-    { section: "Testimonials", id: 4 },
-    { section: "Q&A", id: 5 },
-    { section: "Start today", id: 6 },
+    { section: "Testimonials & Services", id: 4 },
+    { section: "Start today", id: 5 },
   ];
 
   const toggleNavbar = () => {
