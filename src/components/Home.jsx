@@ -3,10 +3,7 @@ import Hero from "./Hero";
 
 export default function Home() {
   return (
-    <section
-      className=" bg-[url('images/pen.jpg')] bg-cover min-h-screen text-white"
-      aria-label="Sky background with clouds"
-    >
+    <section>
       <Header />
       <Hero />
     </section>
