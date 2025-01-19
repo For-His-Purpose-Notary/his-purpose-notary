@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function Services() {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center mt-20 gap-14 lg:gap-8">
+    <section className="mt-20 flex flex-col lg:flex-row justify-center items-center gap-14 lg:gap-8">
       {notaryServices.map((service) => (
         <Card
           key={service.id}
