@@ -10,7 +10,8 @@ export default function Services() {
       </h3>
 
       <Testimonials />
-      <section className="flex flex-col lg:flex-row justify-center min-h-screen items-center gap-2 lg:gap-8">
+
+      <section className="flex flex-col lg:flex-row justify-center min-h-screen items-center gap-12 lg:gap-10 mt-20 lg:mt-0 mb-20">
         {notaryServices.map((service) => (
           <Card
             key={service.id}

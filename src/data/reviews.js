@@ -17,22 +17,4 @@ export const reviews = [
     testimonial: "This is a great service..! Fast, easy, exceptional",
     rating: 4,
   },
-  {
-    image: "/images/me.jpg",
-    name: "Gene Vigil",
-    testimonial: "This is a great service..! Fast, easy, exceptional",
-    rating: 4,
-  },
-  {
-    image: "/images/me.jpg",
-    name: "Yvonne Vigil",
-    testimonial: "This is a great service..! Fast, easy, exceptional",
-    rating: 4.5,
-  },
-  {
-    image: "/images/me.jpg",
-    name: "Louie Vigil",
-    testimonial: "This is a great service..! Fast, easy, exceptional",
-    rating: 5,
-  },
 ];

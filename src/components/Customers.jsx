@@ -8,7 +8,7 @@ export default function Customers({
   imageRating,
 }) {
   return (
-    <section className="max-w-5xl">
+    <section>
       <Image image={image} className={className} />
       <p className="font-bold">{name}</p>
       <p>{testimonial}</p>
