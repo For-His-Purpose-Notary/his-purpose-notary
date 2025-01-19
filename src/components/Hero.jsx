@@ -28,7 +28,7 @@ export default function Hero() {
         <Image
           image="/images/logo.png"
           alt="For His Purpose Notary Services, cross with dove and leaves"
-          className={"max-w-lg"}
+          className={"max-w-xs md:max-w-lg"}
         />
         {/* <blockquote className="text-2xl md:text-3xl lg:text-3xl">
           <p>{quote1}</p>

@@ -1,13 +1,15 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navItems = [
-    { section: "About", id: 1 },
-    { section: "Services", id: 2 },
-    { section: "Testimonials", id: 3 },
-    { section: "Q&A", id: 4 },
-    { section: "Contact", id: 5 },
+    { section: "Home", id: 1 },
+    { section: "About", id: 2 },
+    { section: "Services", id: 3 },
+    { section: "Testimonials", id: 4 },
+    { section: "Q&A", id: 5 },
+    { section: "Start today", id: 6 },
   ];
 
   const toggleNavbar = () => {
@@ -15,7 +17,7 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-4 bg-black/20  ">
+    <header className="flex justify-between items-center w-full p-4  ">
       <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
 
       <button
@@ -64,6 +66,13 @@ export default function Header() {
               {items.section}
             </li>
           ))}
+
+          <Button
+            btnTxt={"Contact"}
+            className={
+              "text-xl bg-slate-800 p-1 rounded-full text-white mb-4 cursor-pointer"
+            }
+          />
         </ul>
       </nav>
     </header>
