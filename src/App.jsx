@@ -12,7 +12,6 @@ function App() {
       <main className="font-thin font-sans bg-neutral-100">
         <Home />
         <About />
-        <Testimonials />
         <Services />
         <Contact />
         <Footer />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import SecondHeader from "./SecondHeader";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,64 +18,67 @@ export default function Header() {
   };
 
   return (
-    <header className="flex justify-between items-center w-full p-4  ">
-      <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
+    <>
+      <header className="flex justify-between items-center w-full p-4  ">
+        <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
 
-      <button
-        className="lg:hidden text-4xl z-50"
-        onClick={toggleNavbar}
-        aria-label="Toggle Navigation"
-      >
-        {isNavOpen ? "✖" : "☰"}
-      </button>
+        <button
+          className="lg:hidden text-4xl z-50"
+          onClick={toggleNavbar}
+          aria-label="Toggle Navigation"
+        >
+          {isNavOpen ? "✖" : "☰"}
+        </button>
 
-      {/* Conditional Rendering for Mobile Menu */}
-      {isNavOpen && (
-        <nav
-          className={`absolute p-2 top-0 left-0 w-full h-screen flex flex-col text-white
+        {/* Conditional Rendering for Mobile Menu */}
+        {isNavOpen && (
+          <nav
+            className={`absolute p-2 top-0 left-0 w-full h-screen flex flex-col text-white
             justify-center items-center gap-6 text-xl
          bg-black/95
             transition-transform duration-[800ms] ease-in-out 
             lg:hidden`}
-          aria-label="Mobile navigation"
+            aria-label="Mobile navigation"
+          >
+            <ul className="flex flex-col justify-center items-center p-4 gap-10">
+              {navItems.map((items) => (
+                <li
+                  key={items.id}
+                  onClick={() => setIsNavOpen(false)}
+                  className="cursor-pointer hover:underline"
+                >
+                  {items.section}
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+
+        {/* Visible for Large Screens */}
+        <nav
+          className="hidden mt-4 lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
+          aria-label="Main navigation"
         >
-          <ul className="flex flex-col justify-center items-center p-4 gap-10">
+          <ul className="flex flex-row gap-8">
             {navItems.map((items) => (
               <li
                 key={items.id}
-                onClick={() => setIsNavOpen(false)}
-                className="cursor-pointer hover:underline"
+                className="cursor-pointer hover:underline text-2xl"
               >
                 {items.section}
               </li>
             ))}
+
+            <Button
+              btnTxt={"Contact"}
+              className={
+                "text-xl bg-slate-800 p-1 rounded-full text-white mb-4 cursor-pointer"
+              }
+            />
           </ul>
         </nav>
-      )}
-
-      {/* Visible for Large Screens */}
-      <nav
-        className="hidden lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
-        aria-label="Main navigation"
-      >
-        <ul className="flex flex-row gap-6">
-          {navItems.map((items) => (
-            <li
-              key={items.id}
-              className="cursor-pointer hover:underline text-2xl"
-            >
-              {items.section}
-            </li>
-          ))}
-
-          <Button
-            btnTxt={"Contact"}
-            className={
-              "text-xl bg-slate-800 p-1 rounded-full text-white mb-4 cursor-pointer"
-            }
-          />
-        </ul>
-      </nav>
-    </header>
+      </header>
+      <SecondHeader />
+    </>
   );
 }

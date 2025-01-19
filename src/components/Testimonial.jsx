@@ -1,3 +1,3 @@
 export default function Testimonials() {
-  return <div>Testimonials</div>;
+  return <div className="text-white mt-20">Testimonials</div>;
 }
