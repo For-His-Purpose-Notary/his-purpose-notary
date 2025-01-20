@@ -25,7 +25,7 @@ export default function Hero() {
           />
         </section>
         <Image
-          // image="/images/logo.png" //logo tbd, designed by Melvin Torres
+          // image="/images/logo.png" //logo tbd, designed and credited by/to Melvin Torres
           alt="For His Purpose Notary Services, cross with dove and leaves, Designed by Melvin Torres"
           className={"max-w-xs md:max-w-lg rounded-3xl"}
         />
