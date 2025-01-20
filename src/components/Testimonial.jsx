@@ -12,7 +12,7 @@ export default function Testimonials() {
             className={"rounded-full w-14 h-14"}
             name={review.name}
             testimonial={review.testimonial}
-            rating={review.rating}
+            starRating={review.starRating}
           />
         ))}
       </section>
