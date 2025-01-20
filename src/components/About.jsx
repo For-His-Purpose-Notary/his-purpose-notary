@@ -18,8 +18,15 @@ export default function About() {
       varius quam lobortis eu. Sed ex mauris, dignissim id massa ac, congue. `,
   ];
   return (
-    <section className="flex flex-col justify-center items-center mt-20 md:mt-10">
-      <section className="max-w-xs md:max-w-xl lg:max-w-5xl flex flex-col gap-8 ">
+    <section
+      className="flex flex-col justify-center items-center mt-20 md:mt-10"
+      aria-labelledby="about-heading"
+      id="about"
+    >
+      <section
+        className="max-w-xs md:max-w-xl lg:max-w-5xl flex flex-col gap-8 "
+        aria-describedby="about-text why-notary-text"
+      >
         <h2 className="text-3xl lg:text-4xl">My Story</h2>
         <p className=" text-xl md:text-xl  lg:text-2xl">{aboutText}</p>
 

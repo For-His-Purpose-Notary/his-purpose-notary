@@ -3,7 +3,7 @@ export default function SecondHeader() {
   const author = "Colossians 3:23-24";
   return (
     <blockquote className="text-md text-center bg-slate-800 text-white w-full">
-      <section className="max-w-5xl mx-auto">
+      <section className="max-w-5xl mx-auto p-2">
         <p>{quote1}</p>
         <cite>- {author}</cite>
       </section>

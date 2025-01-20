@@ -1,3 +1,7 @@
 export default function Questions() {
-  return <div className="text-black">Questions</div>;
+  return (
+    <article className="text-black" id="q&a">
+      Questions
+    </article>
+  );
 }

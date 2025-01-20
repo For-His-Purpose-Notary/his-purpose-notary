@@ -3,6 +3,7 @@ import Image from "./Image";
 export default function Customers({
   image,
   className,
+  alt,
   name,
   testimonial,
   starRating,
@@ -21,11 +22,13 @@ export default function Customers({
     ));
 
   return (
-    <section>
-      <Image image={image} className={className} />
-      <p className="font-bold">{name}</p>
-      <p>{testimonial}</p>
-      <div>{stars}</div>
-    </section>
+    <article className="max-w-xs">
+      <Image image={image} className={className} alt={alt} />
+      <section className="ml-4 mt-4">
+        <p className="font-bold">{name}</p>
+        <p>{testimonial}</p>
+        <div>{stars}</div>
+      </section>
+    </article>
   );
 }

@@ -8,7 +8,7 @@ export default function Header() {
     { section: "Home", id: 1 },
     { section: "About", id: 2 },
     { section: "Services", id: 3 },
-    { section: "Testimonials & Services", id: 4 },
+    { section: "Testimonials", id: 4 },
     { section: "Start today", id: 5 },
   ];
 
@@ -18,7 +18,10 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex justify-between items-center w-full p-4  ">
+      <header
+        className="flex justify-between items-center w-full p-4"
+        id="home"
+      >
         <h1 className="text-3xl lg:text-5xl">His Purpose Notary</h1>
 
         <button
@@ -56,9 +59,9 @@ export default function Header() {
         {/* Visible for Large Screens */}
         <nav
           className="hidden mt-4 lg:flex lg:flex-row lg:gap-8 lg:items-center lg:ml-auto"
-          aria-label="Main navigation"
+          aria-label="main-navigation"
         >
-          <ul className="flex flex-row gap-8">
+          <ul className="flex flex-row gap-8" role="navbar" id="navigation">
             {navItems.map((items) => (
               <li
                 key={items.id}

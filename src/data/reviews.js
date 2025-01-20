@@ -1,19 +1,21 @@
 export const reviews = [
   {
-    image: "/images/me.jpg",
-    name: "Ashley Vigil",
+    image: "/images/paige.jpg",
+    alt: "Image of a Women, photo by Andrea Piacquadio on Pexels",
+    name: "Paige Matthews",
     testimonial: "This is a great service..! Fast, easy, exceptional",
     starRating: 4,
   },
   {
-    image: "/images/me.jpg",
-    name: "Ava Vigil",
+    image: "/images/george.jpg",
+    alt: "Image of a Man, photo by Jeffery Reed on Pexels",
+    name: "George Miller",
     testimonial: "This is a great service..! Fast, easy, exceptional",
-    starRating: 4,
+    starRating: 3,
   },
   {
-    image: "/images/me.jpg",
-    name: "Davonne Vigil",
+    image: "/images/jennifer.jpg",
+    name: "Jennifer Jude",
     testimonial: "This is a great service..! Fast, easy, exceptional",
     starRating: 5,
   },

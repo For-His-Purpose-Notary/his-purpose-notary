@@ -4,13 +4,15 @@ import Testimonials from "./Testimonial";
 
 export default function Services() {
   return (
-    <section className="bg-slate-800 mt-20 flex flex-col justify-center items-center min-h-screen">
+    <section
+      className="bg-slate-800 mt-20 flex flex-col justify-center items-center min-h-screen"
+      id="testimonials"
+    >
+      s
       <h3 className="text-2xl md:text-4xl font-bold text-white mt-20">
-        What Customers Are Saying...
+        What our customers are saying...
       </h3>
-
       <Testimonials />
-
       <section className="flex flex-col lg:flex-row justify-center min-h-screen items-center gap-12 lg:gap-10 mt-20 lg:mt-0 mb-20 md:-mb-10">
         {notaryServices.map((service) => (
           <Card
